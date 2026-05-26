@@ -253,28 +253,25 @@ body {
     justify-content:center;
     align-items:center;
     text-align:center;
-    animation:fadeOut 1s ease forwards;
-    animation-delay:3.5s;
 }
 
 .intro-logo{
     color:#e50914;
     font-size:5rem;
     font-weight:700;
-    letter-spacing:6px;
+    letter-spacing:5px;
     animation:zoomIn 2s ease;
 }
 
 .intro-text{
-    margin-top:25px;
+    margin-top:20px;
     font-size:2rem;
-    font-weight:600;
     color:white;
+    font-weight:600;
 }
 
 .intro-subtext{
     margin-top:15px;
-    font-size:1rem;
     color:#ccc;
     width:80%;
     max-width:600px;
@@ -290,12 +287,5 @@ body {
     100%{
         transform:scale(1);
         opacity:1;
-    }
-}
-
-@keyframes fadeOut{
-    to{
-        opacity:0;
-        visibility:hidden;
     }
 }
