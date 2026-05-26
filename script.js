@@ -4,7 +4,7 @@ const mainContent = document.getElementById('main-content');
 setTimeout(() => {
     introScreen.style.display = 'none';
     mainContent.classList.remove('hidden');
-}, 4500);
+}, 4000);
 
 const videoModal = document.getElementById('video-modal');
 const mainVideo = document.getElementById('main-video');
