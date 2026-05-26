@@ -11,14 +11,14 @@ const mainVideo = document.getElementById('main-video');
 const closeBtn = document.getElementById('close-btn');
 
 function openVideo(videoPath) {
-    videoModal.classList.remove('hidden');
+    videoModal.style.display = 'flex';
     mainVideo.src = videoPath;
     mainVideo.load();
     mainVideo.play();
 }
 
 closeBtn.addEventListener('click', () => {
-    videoModal.style.display = 'flex';
+    videoModal.style.display = 'none';
     mainVideo.pause();
     mainVideo.src = '';
 });
