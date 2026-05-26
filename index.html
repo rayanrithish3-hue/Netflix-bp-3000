@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bharathi Priya</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NETFLIX INTRO -->
+  <div id="intro-screen">
+    <video id="intro-video" autoplay muted>
+      <source src="assets/netflix-intro.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- MAIN OTT -->
+  <div id="main-content" class="hidden">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">NETFLIX</div>
+      <div class="profile">
+        <img src="assets/girlfriend-main.jpg" alt="profile">
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="overlay"></div>
+
+      <img class="hero-bg" src="assets/girlfriend-main.jpg" alt="Hero">
+
+      <div class="hero-content">
+        <h1>Bharathi Priya</h1>
+
+        <p>
+          The collection of memories, funny moments,
+          crazy moments, laughters etc...
+        </p>
+
+        <div class="buttons">
+          <button class="play-btn" onclick="openVideo('assets/bp-video.mp4')">
+            ▶ Play
+          </button>
+
+          <button class="info-btn">
+            ❤ Forever Collection
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOVIE ROW -->
+    <section class="movies-section">
+      <h2>Our Special Collection</h2>
+
+      <div class="movie-row">
+
+        <!-- BP -->
+        <div class="movie-card" onclick="openVideo('assets/bp-video.mp4')">
+          <img src="assets/bp-poster.jpg" alt="BP">
+          <div class="movie-title">BP</div>
+        </div>
+
+        <!-- Rider 3000 -->
+        <div class="movie-card" onclick="openVideo('assets/rider3000-video.mp4')">
+          <img src="assets/rider3000-poster.jpg" alt="Rider 3000">
+          <div class="movie-title">Rider 3000</div>
+        </div>
+
+        <!-- Memories -->
+        <div class="movie-card" onclick="openVideo('assets/memories-video.mp4')">
+          <img src="assets/memories-poster.jpg" alt="Memories">
+          <div class="movie-title">Memories</div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- VIDEO PLAYER -->
+  <div id="video-modal" class="hidden">
+    <span id="close-btn">✕</span>
+
+    <video id="main-video" controls autoplay>
+      <source src="" type="video/mp4">
+    </video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
