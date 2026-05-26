@@ -13,10 +13,12 @@ const closeBtn = document.getElementById('close-btn');
 function openVideo(videoPath) {
     videoModal.classList.remove('hidden');
     mainVideo.src = videoPath;
+    mainVideo.load();
     mainVideo.play();
 }
 
 closeBtn.addEventListener('click', () => {
     videoModal.classList.add('hidden');
     mainVideo.pause();
+    mainVideo.src = '';
 });
