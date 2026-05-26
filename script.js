@@ -1,0 +1,23 @@
+const introVideo = document.getElementById('intro-video');
+const introScreen = document.getElementById('intro-screen');
+const mainContent = document.getElementById('main-content');
+
+introVideo.onended = () => {
+  introScreen.style.display = 'none';
+  mainContent.classList.remove('hidden');
+};
+
+const videoModal = document.getElementById('video-modal');
+const mainVideo = document.getElementById('main-video');
+const closeBtn = document.getElementById('close-btn');
+
+function openVideo(videoPath) {
+  videoModal.classList.remove('hidden');
+  mainVideo.src = videoPath;
+  mainVideo.play();
+}
+
+closeBtn.addEventListener('click', () => {
+  videoModal.classList.add('hidden');
+  mainVideo.pause();
+});
