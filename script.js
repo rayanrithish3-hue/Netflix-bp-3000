@@ -18,7 +18,7 @@ function openVideo(videoPath) {
 }
 
 closeBtn.addEventListener('click', () => {
-    videoModal.classList.add('hidden');
+    videoModal.style.display = 'flex';
     mainVideo.pause();
     mainVideo.src = '';
 });
